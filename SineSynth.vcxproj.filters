@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\User\Documents\VST_SDK\my_plugins\SineSynth\source\ss_processor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\Documents\VST_SDK\my_plugins\SineSynth\source\ss_controller.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\Documents\VST_SDK\my_plugins\SineSynth\source\ss_entry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\Documents\VST_SDK\vst3sdk\public.sdk\source\main\dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\User\Documents\VST_SDK\my_plugins\SineSynth\source\version.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\Documents\VST_SDK\my_plugins\SineSynth\source\ss_cids.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\Documents\VST_SDK\my_plugins\SineSynth\source\ss_processor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\Documents\VST_SDK\my_plugins\SineSynth\source\ss_controller.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\params.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\User\Documents\VST_SDK\my_plugins\SineSynth\resource\ss_editor.uidesc" />
+    <CustomBuild Include="C:\Users\User\Documents\VST_SDK\my_plugins\SineSynth\resource\F62A33DB197A561BAF6B1ED88A8F5DAC_snapshot.png">
+      <Filter>Resources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\User\Documents\VST_SDK\my_plugins\SineSynth\resource\F62A33DB197A561BAF6B1ED88A8F5DAC_snapshot_2.0x.png">
+      <Filter>Resources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\User\Documents\VST_SDK\my_plugins\SineSynth\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="C:\Users\User\Documents\VST_SDK\my_plugins\SineSynth\resource\win32resource.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{4CEEBBA3-95AC-3856-93A2-6423C011E0FC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{26BEADB8-EF47-346B-84B8-23BBEBF236E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{24DC8A81-4282-3DBA-969E-C0AE95E8FA44}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

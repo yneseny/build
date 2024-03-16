@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BDA4837A-D282-3A38-AA09-DB6922A6B238}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\User\Documents\VST_SDK\vst3sdk;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\User\Documents\VST_SDK\vst3sdk;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\User\Documents\VST_SDK\vst3sdk\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/User/Documents/VST_SDK/vst3sdk/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/User/Documents/VST_SDK/my_plugins/SineSynth -BC:/Users/User/Documents/VST_SDK/my_plugins/SineSynth/build --check-stamp-file C:/Users/User/Documents/VST_SDK/my_plugins/SineSynth/build/vst3sdk/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakePrintHelpers.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckLanguage.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPackageMessage.cmake;C:\Users\User\Documents\VST_SDK\vst3sdk\cmake\modules\SMTG_AAXSupport.cmake;C:\Users\User\Documents\VST_SDK\vst3sdk\cmake\modules\SMTG_AddCommonOptions.cmake;C:\Users\User\Documents\VST_SDK\vst3sdk\cmake\modules\SMTG_AddSMTGLibrary.cmake;C:\Users\User\Documents\VST_SDK\vst3sdk\cmake\modules\SMTG_AddVST3Library.cmake;C:\Users\User\Documents\VST_SDK\vst3sdk\cmake\modules\SMTG_AddVST3Options.cmake;C:\Users\User\Documents\VST_SDK\vst3sdk\cmake\modules\SMTG_Bundle.cmake;C:\Users\User\Documents\VST_SDK\vst3sdk\cmake\modules\SMTG_CodeSign.cmake;C:\Users\User\Documents\VST_SDK\vst3sdk\cmake\modules\SMTG_ConfigureCmakeGenerator.cmake;C:\Users\User\Documents\VST_SDK\vst3sdk\cmake\modules\SMTG_CoreAudioSupport.cmake;C:\Users\User\Documents\VST_SDK\vst3sdk\cmake\modules\SMTG_CustomModuleTarget.cmake;C:\Users\User\Documents\VST_SDK\vst3sdk\cmake\modules\SMTG_DetectPlatform.cmake;C:\Users\User\Documents\VST_SDK\vst3sdk\cmake\modules\SMTG_ExportedSymbols.cmake;C:\Users\User\Documents\VST_SDK\vst3sdk\cmake\modules\SMTG_FindJack.cmake;C:\Users\User\Documents\VST_SDK\vst3sdk\cmake\modules\SMTG_Global.cmake;C:\Users\User\Documents\VST_SDK\vst3sdk\cmake\modules\SMTG_PlatformIOS.cmake;C:\Users\User\Documents\VST_SDK\vst3sdk\cmake\modules\SMTG_PlatformToolset.cmake;C:\Users\User\Documents\VST_SDK\vst3sdk\cmake\modules\SMTG_Platform_Windows.cmake;C:\Users\User\Documents\VST_SDK\vst3sdk\cmake\modules\SMTG_PrefixHeader.cmake;C:\Users\User\Documents\VST_SDK\vst3sdk\cmake\modules\SMTG_SetDebugExecutable.cmake;C:\Users\User\Documents\VST_SDK\vst3sdk\cmake\modules\SMTG_SetupVST3LibraryDefaultPath.cmake;C:\Users\User\Documents\VST_SDK\vst3sdk\cmake\modules\SMTG_UniversalBinary.cmake;C:\Users\User\Documents\VST_SDK\vst3sdk\cmake\modules\SMTG_VST3_SDK.cmake;C:\Users\User\Documents\VST_SDK\vst3sdk\cmake\modules\SMTG_VstGuiSupport.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\User\Documents\VST_SDK\my_plugins\SineSynth\build\vst3sdk\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/User/Documents/VST_SDK/vst3sdk/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/User/Documents/VST_SDK/my_plugins/SineSynth -BC:/Users/User/Documents/VST_SDK/my_plugins/SineSynth/build --check-stamp-file C:/Users/User/Documents/VST_SDK/my_plugins/SineSynth/build/vst3sdk/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakePrintHelpers.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckLanguage.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPackageMessage.cmake;C:\Users\User\Documents\VST_SDK\vst3sdk\cmake\modules\SMTG_AAXSupport.cmake;C:\Users\User\Documents\VST_SDK\vst3sdk\cmake\modules\SMTG_AddCommonOptions.cmake;C:\Users\User\Documents\VST_SDK\vst3sdk\cmake\modules\SMTG_AddSMTGLibrary.cmake;C:\Users\User\Documents\VST_SDK\vst3sdk\cmake\modules\SMTG_AddVST3Library.cmake;C:\Users\User\Documents\VST_SDK\vst3sdk\cmake\modules\SMTG_AddVST3Options.cmake;C:\Users\User\Documents\VST_SDK\vst3sdk\cmake\modules\SMTG_Bundle.cmake;C:\Users\User\Documents\VST_SDK\vst3sdk\cmake\modules\SMTG_CodeSign.cmake;C:\Users\User\Documents\VST_SDK\vst3sdk\cmake\modules\SMTG_ConfigureCmakeGenerator.cmake;C:\Users\User\Documents\VST_SDK\vst3sdk\cmake\modules\SMTG_CoreAudioSupport.cmake;C:\Users\User\Documents\VST_SDK\vst3sdk\cmake\modules\SMTG_CustomModuleTarget.cmake;C:\Users\User\Documents\VST_SDK\vst3sdk\cmake\modules\SMTG_DetectPlatform.cmake;C:\Users\User\Documents\VST_SDK\vst3sdk\cmake\modules\SMTG_ExportedSymbols.cmake;C:\Users\User\Documents\VST_SDK\vst3sdk\cmake\modules\SMTG_FindJack.cmake;C:\Users\User\Documents\VST_SDK\vst3sdk\cmake\modules\SMTG_Global.cmake;C:\Users\User\Documents\VST_SDK\vst3sdk\cmake\modules\SMTG_PlatformIOS.cmake;C:\Users\User\Documents\VST_SDK\vst3sdk\cmake\modules\SMTG_PlatformToolset.cmake;C:\Users\User\Documents\VST_SDK\vst3sdk\cmake\modules\SMTG_Platform_Windows.cmake;C:\Users\User\Documents\VST_SDK\vst3sdk\cmake\modules\SMTG_PrefixHeader.cmake;C:\Users\User\Documents\VST_SDK\vst3sdk\cmake\modules\SMTG_SetDebugExecutable.cmake;C:\Users\User\Documents\VST_SDK\vst3sdk\cmake\modules\SMTG_SetupVST3LibraryDefaultPath.cmake;C:\Users\User\Documents\VST_SDK\vst3sdk\cmake\modules\SMTG_UniversalBinary.cmake;C:\Users\User\Documents\VST_SDK\vst3sdk\cmake\modules\SMTG_VST3_SDK.cmake;C:\Users\User\Documents\VST_SDK\vst3sdk\cmake\modules\SMTG_VstGuiSupport.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\User\Documents\VST_SDK\my_plugins\SineSynth\build\vst3sdk\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\User\Documents\VST_SDK\my_plugins\SineSynth\build\ZERO_CHECK.vcxproj">
+      <Project>{D3587EAB-8334-3F3E-B8EA-FEB3AB91B53F}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Documents\VST_SDK\my_plugins\SineSynth\build\vst3sdk\public.sdk\samples\vst-hosting\inspectorapp\VST3Inspector.vcxproj">
+      <Project>{4650D900-108B-313F-A17B-E19DD874F556}</Project>
+      <Name>VST3Inspector</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Documents\VST_SDK\my_plugins\SineSynth\build\vst3sdk\public.sdk\samples\vst\adelay\adelay.vcxproj">
+      <Project>{FEE7A4E1-1FB5-3330-9C94-B12373D74F31}</Project>
+      <Name>adelay</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Documents\VST_SDK\my_plugins\SineSynth\build\vst3sdk\public.sdk\samples\vst\again\again.vcxproj">
+      <Project>{429C0F8D-6BA8-3475-B35D-907006D2BB99}</Project>
+      <Name>again</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Documents\VST_SDK\my_plugins\SineSynth\build\vst3sdk\public.sdk\samples\vst\again_sampleaccurate\again-sampleaccurate.vcxproj">
+      <Project>{0E608E11-5D38-35CF-8F8F-673E9F8AAABE}</Project>
+      <Name>again-sampleaccurate</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Documents\VST_SDK\my_plugins\SineSynth\build\vst3sdk\public.sdk\samples\vst\again\againsimple.vcxproj">
+      <Project>{3666B30C-83B3-38A5-93F5-75A8FC674958}</Project>
+      <Name>againsimple</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Documents\VST_SDK\my_plugins\SineSynth\build\vst3sdk\base\base.vcxproj">
+      <Project>{BA638283-C579-3D2D-AA16-9F8E13C90964}</Project>
+      <Name>base</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Documents\VST_SDK\my_plugins\SineSynth\build\vst3sdk\public.sdk\samples\vst\channelcontext\channelcontext.vcxproj">
+      <Project>{1952785D-2C54-3252-9D24-E0D178B7D9A0}</Project>
+      <Name>channelcontext</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Documents\VST_SDK\my_plugins\SineSynth\build\vst3sdk\public.sdk\samples\vst-hosting\editorhost\editorhost.vcxproj">
+      <Project>{0BB0F4E0-6C9B-3056-A842-F643632E8E1A}</Project>
+      <Name>editorhost</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Documents\VST_SDK\my_plugins\SineSynth\build\vst3sdk\public.sdk\samples\vst\hostchecker\hostchecker.vcxproj">
+      <Project>{FA7CF45B-A57B-323A-8262-8DA45F07A46C}</Project>
+      <Name>hostchecker</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Documents\VST_SDK\my_plugins\SineSynth\build\vst3sdk\public.sdk\samples\vst\legacymidiccout\legacymidiccout.vcxproj">
+      <Project>{4DF274B6-2EC5-35F7-9A1F-532CBE3278D8}</Project>
+      <Name>legacymidiccout</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Documents\VST_SDK\my_plugins\SineSynth\build\vst3sdk\public.sdk\samples\vst\mda-vst3\mda-vst3.vcxproj">
+      <Project>{23C613C8-E212-326C-A8AE-E7CBB1A8BDDE}</Project>
+      <Name>mda-vst3</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Documents\VST_SDK\my_plugins\SineSynth\build\vst3sdk\public.sdk\samples\vst-utilities\moduleinfotool\moduleinfotool.vcxproj">
+      <Project>{6B0A421D-B559-3E5A-811F-CDEF7AA1928D}</Project>
+      <Name>moduleinfotool</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Documents\VST_SDK\my_plugins\SineSynth\build\vst3sdk\public.sdk\samples\vst\multiple_programchanges\multiple-program-changes.vcxproj">
+      <Project>{41249677-6448-3B85-B575-05E5A3F0FAD8}</Project>
+      <Name>multiple-program-changes</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Documents\VST_SDK\my_plugins\SineSynth\build\vst3sdk\public.sdk\samples\vst\note_expression_synth\noteexpressionsynth.vcxproj">
+      <Project>{391C559F-8705-33FE-9097-8B3E7CBC7A66}</Project>
+      <Name>noteexpressionsynth</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Documents\VST_SDK\my_plugins\SineSynth\build\vst3sdk\public.sdk\samples\vst\note_expression_text\noteexpressiontext.vcxproj">
+      <Project>{DDFA41F7-38B3-3A71-9778-56E7372A7F59}</Project>
+      <Name>noteexpressiontext</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Documents\VST_SDK\my_plugins\SineSynth\build\vst3sdk\public.sdk\samples\vst\panner\panner.vcxproj">
+      <Project>{E8B47B71-A018-3E0B-A7BF-113CB41F44B4}</Project>
+      <Name>panner</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Documents\VST_SDK\my_plugins\SineSynth\build\vst3sdk\public.sdk\samples\vst\pitchnames\pitchnames.vcxproj">
+      <Project>{B6E7333D-F128-3D5D-B8E3-61CDCCC83316}</Project>
+      <Name>pitchnames</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Documents\VST_SDK\my_plugins\SineSynth\build\vst3sdk\pluginterfaces\pluginterfaces.vcxproj">
+      <Project>{D5E150F1-19AA-372C-B63D-EA8433286572}</Project>
+      <Name>pluginterfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Documents\VST_SDK\my_plugins\SineSynth\build\vst3sdk\public.sdk\samples\vst\prefetchablesupport\prefetchable.vcxproj">
+      <Project>{E622FE13-114B-3253-AD3D-745A5B1EC267}</Project>
+      <Name>prefetchable</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Documents\VST_SDK\my_plugins\SineSynth\build\vst3sdk\public.sdk\samples\vst\programchange\programchange.vcxproj">
+      <Project>{5B743709-58FA-3548-9717-877820FEBF07}</Project>
+      <Name>programchange</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Documents\VST_SDK\my_plugins\SineSynth\build\vst3sdk\public.sdk\sdk.vcxproj">
+      <Project>{08D9F9A9-81F8-3F5B-BB6D-A0D62F080329}</Project>
+      <Name>sdk</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Documents\VST_SDK\my_plugins\SineSynth\build\vst3sdk\public.sdk\sdk_common.vcxproj">
+      <Project>{AC96E5F9-A462-3D53-B1B7-7E3688D46006}</Project>
+      <Name>sdk_common</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Documents\VST_SDK\my_plugins\SineSynth\build\vst3sdk\public.sdk\sdk_hosting.vcxproj">
+      <Project>{C875D5CC-BDF9-3D85-B37D-43938C895FBB}</Project>
+      <Name>sdk_hosting</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Documents\VST_SDK\my_plugins\SineSynth\build\vst3sdk\public.sdk\samples\vst\syncdelay\syncdelay.vcxproj">
+      <Project>{4475F240-F80A-3E73-9D94-4938ECFE7C90}</Project>
+      <Name>syncdelay</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Documents\VST_SDK\my_plugins\SineSynth\build\vst3sdk\public.sdk\samples\vst-hosting\validator\validator.vcxproj">
+      <Project>{5CF1E091-3264-339E-9278-E7AF1AC40E81}</Project>
+      <Name>validator</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Documents\VST_SDK\my_plugins\SineSynth\build\vst3sdk\VSTGUI.build\vstgui\lib\vstgui.vcxproj">
+      <Project>{01D86E02-20C6-33CE-8919-2F94716C2126}</Project>
+      <Name>vstgui</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Documents\VST_SDK\my_plugins\SineSynth\build\vst3sdk\VSTGUI.build\vstgui\standalone\vstgui_standalone.vcxproj">
+      <Project>{566622A6-231B-36EB-B3F7-5378E56CC044}</Project>
+      <Name>vstgui_standalone</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Documents\VST_SDK\my_plugins\SineSynth\build\vst3sdk\vstgui_support.vcxproj">
+      <Project>{15AF7354-5805-3EE0-9BCC-4AA79ED76C52}</Project>
+      <Name>vstgui_support</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Documents\VST_SDK\my_plugins\SineSynth\build\vst3sdk\VSTGUI.build\vstgui\uidescription\vstgui_uidescription.vcxproj">
+      <Project>{39C531EA-126A-38A0-BD7D-AA2B8CE8E6D8}</Project>
+      <Name>vstgui_uidescription</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

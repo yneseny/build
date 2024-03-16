@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\User\Documents\VST_SDK\my_plugins\SineSynth\build\CMakeFiles\2f7f71fa389e528213b82880105cf29a\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{1A35C71D-63EC-3F9E-8288-E56047F3AB2C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
